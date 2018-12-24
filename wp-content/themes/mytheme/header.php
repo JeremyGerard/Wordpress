@@ -25,8 +25,7 @@
     <?php wp_head();?>
   </head>
   <body>
-
-      <header>
+      <div>
           <nav class="navbar  navbar-fixed-top navbar-default">
               <div class="container">
                   <div class="navbar-header">
@@ -52,7 +51,7 @@
                   </div>
               </div>
           </nav>
-      </header>
+      </div>
 
 
       <!--div class="blog-masthead">
