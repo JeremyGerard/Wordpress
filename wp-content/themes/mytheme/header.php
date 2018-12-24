@@ -25,8 +25,6 @@
     <?php wp_head();?>
   </head>
   <body>
-
-  <div class="blog-header">
       <nav class="navbar  navbar-fixed-top navbar-default">
           <div class="container">
               <div class="blog-logo">
@@ -45,21 +43,20 @@
               </div>
           </div>
       </nav>
-  </div>
-  <div class="container">
-      <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-      <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
+      <div class="container">
+          <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+          <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 
 
-      <!--div class="blog-masthead">
-          <div class="container">
-            <nav class="blog-nav">
-              <a class="blog-nav-item" href="#">Qui sommes-nous</a>
-              <a class="blog-nav-item" href="#">Entreprise</a>
-              <a class="blog-nav-item" href="#">Candidat</a>
-              <a class="blog-nav-item" href="#">Offres d'emploi</a>
-              <a class="blog-nav-item" href="#">Contact</a>
-            </nav>
-          </div>
-      </div-->
+    <!--div class="blog-masthead">
+    <div class="container">
+    <nav class="blog-nav">
+    <a class="blog-nav-item" href="#">Qui sommes-nous</a>
+    <a class="blog-nav-item" href="#">Entreprise</a>
+    <a class="blog-nav-item" href="#">Candidat</a>
+    <a class="blog-nav-item" href="#">Offres d'emploi</a>
+    <a class="blog-nav-item" href="#">Contact</a>
+    </nav>
+    </div>
+    </div-->
 
