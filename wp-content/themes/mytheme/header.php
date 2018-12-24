@@ -29,7 +29,7 @@
           <nav class="navbar  navbar-fixed-top navbar-default">
               <div class="container">
                   <div class="navbar-header">
-                      <a class="blog-logo"">
+                      <a class="blog-logo">
                           <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/>
                       </a>
                   </div>
