@@ -28,12 +28,21 @@
       <div>
           <nav class="navbar  navbar-fixed-top navbar-default">
               <div class="container">
-                  <div class="navbar-header">
-                      <a class="blog-logo">
+                  <div class="blog-logo">
+                      <a class="navbar-brand" href="#index" title="BeeHive">
                           <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/>
                       </a>
                   </div>
                   <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+                      <div class="container">
+                          <nav class="blog-nav">
+                              <a class="blog-nav-item" href="#">Qui sommes-nous</a>
+                              <a class="blog-nav-item" href="#">Entreprise</a>
+                              <a class="blog-nav-item" href="#">Candidat</a>
+                              <a class="blog-nav-item" href="#">Offres d'emploi</a>
+                              <a class="blog-nav-item" href="#">Contact</a>
+                          </nav>
+                      </div>
                       <ul class="nav navbar-nav navbar-right">
                           <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
                           <li><a href="#entreprise" title=""> Entreprise </a></li>
