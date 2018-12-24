@@ -25,38 +25,51 @@
     <?php wp_head();?>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar  navbar-fixed-top navbar-default">
-          <div class="container">
-              <div class="blog-logo">
-                  <a class="navbar-brand" href="#index" title="BeeHive">
-                      <!--img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/-->
-                  </a>
-              </div>
-              <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
-                      <li><a href="#entreprise" title=""> Entreprise </a></li>
-                      <li><a href="#candidat" title=""> Candidat </a></li>
-                      <li><a href="#offres" title=""> Offres d'emploi </a></li>
-                      <li><a href="#contact" title=""> Contact </a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+        <div class="container">
+              <nav class="navbar  navbar-fixed-top navbar-default">
+                  <div class="container">
+                      <div class="blog-logo">
+                          <a class="navbar-brand" href="#index" title="BeeHive">
+                              <!--img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/-->
+                          </a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
+                              <li><a href="#entreprise" title=""> Entreprise </a></li>
+                              <li><a href="#candidat" title=""> Candidat </a></li>
+                              <li><a href="#offres" title=""> Offres d'emploi </a></li>
+                              <li><a href="#contact" title=""> Contact </a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
       <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
       <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 
+        <section id="mission" class="section vision clearfix">
+            <div class="flex-container">
+                <h1 class="background-title">VISION</h1>
+                <h2 class="about-title">Demain, chaque secteur aura été bouleversé et sera ultra-concurrentiel. Pour émerger durablement, il faudra sans cesse innover.</h2>
+                <p>La Technologie et l’IA permettront de mieux prédire la réussite d’un recrutement mais elles ne remplaceront pas l’Humain.
+                    </br>Le CV n’existera plus et l’accent sera mis sur le « Savoir-Être en entreprise ».
+                    </br>Une majorité de travailleurs seront indépendants.
+                    </br>Les cabinets de recrutement existeront toujours mais travailleront différemment.
+                    </br></br>Nous sommes le 1er cabinet de conseil en recrutement doté d’un laboratoire digital en interne, <strong>le Raise Lab </strong>, pour repenser, brique par brique, tout le cycle de vie d’un recrutement. Notre équipe de designers et développeurs travaille pour changer la manière d'attirer et recruter des talents : de la stratégie de sourcing, l’identification et l’évaluation des candidats jusqu’à l’intégration et le développement de vos futurs collaborateurs.</p>
+            </div>
+        </section>
 
-    <!--div class="blog-masthead">
-    <div class="container">
-    <nav class="blog-nav">
-    <a class="blog-nav-item" href="#">Qui sommes-nous</a>
-    <a class="blog-nav-item" href="#">Entreprise</a>
-    <a class="blog-nav-item" href="#">Candidat</a>
-    <a class="blog-nav-item" href="#">Offres d'emploi</a>
-    <a class="blog-nav-item" href="#">Contact</a>
-    </nav>
-    </div>
-    </div-->
+
+
+        <!--div class="blog-masthead">
+        <div class="container">
+        <nav class="blog-nav">
+        <a class="blog-nav-item" href="#">Qui sommes-nous</a>
+        <a class="blog-nav-item" href="#">Entreprise</a>
+        <a class="blog-nav-item" href="#">Candidat</a>
+        <a class="blog-nav-item" href="#">Offres d'emploi</a>
+        <a class="blog-nav-item" href="#">Contact</a>
+        </nav>
+        </div>
+        </div-->
 
