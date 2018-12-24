@@ -35,18 +35,18 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand" href="./index.html" title="">
-                          <img src="./images/beehive-search.png" class="navbar-logo-img" alt="">
+                      <a class="navbar-brand" href="#index" title="BeeHive">
+                          <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" class="navbar-logo-img" alt=""/>
                       </a>
                   </div>
 
                   <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
                       <ul class="nav navbar-nav navbar-right">
-                          <li><a href="./index.html" title="" class="active"> Qui sommes-nous </a></li>
-                          <li><a href="./about.html" title=""> Entreprise </a></li>
-                          <li><a href="./pricing.html" title=""> Candidat </a></li>
-                          <li><a href="./contact.html" title=""> Offres d'emploi </a></li>
-                          <li><a href="./components.html" title=""> Contact </a></li>
+                          <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
+                          <li><a href="#entreprise" title=""> Entreprise </a></li>
+                          <li><a href="#candidat" title=""> Candidat </a></li>
+                          <li><a href="#offres" title=""> Offres d'emploi </a></li>
+                          <li><a href="#contact" title=""> Contact </a></li>
                       </ul>
                   </div>
               </div>
