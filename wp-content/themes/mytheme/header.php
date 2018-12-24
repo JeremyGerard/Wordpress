@@ -29,8 +29,8 @@
           <nav class="navbar  navbar-fixed-top navbar-default">
               <div class="container">
                   <div class="navbar-header">
-                      <a class="navbar-brand" href="#index" title="BeeHive">
-                          <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" class="blog-logo" alt=""/>
+                      <a class="blog-logo"">
+                          <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/>
                       </a>
                   </div>
                   <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
