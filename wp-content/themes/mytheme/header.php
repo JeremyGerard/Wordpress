@@ -65,7 +65,7 @@
           <a class="blog-nav-item" href="#">About</a>
         </nav>
       </div>
-  </div>
+  </div-->
 
   <div class="container">
 
