@@ -30,20 +30,9 @@
               <div class="container">
                   <div class="navbar-header">
                       <a class="navbar-brand" href="#index" title="BeeHive">
-                          <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" class="navbar-logo-img" alt=""/>
+                          <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" class="blog-logo" alt=""/>
                       </a>
                   </div>
-
-                  <div class="site-header-inner">
-                      <div class="brand header-brand">
-                          <h1 class="m-0">
-                              <a href="#">
-                                  <img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt="Blue logo">
-                              </a>
-                          </h1>
-                      </div>
-                  </div>
-
                   <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
                       <ul class="nav navbar-nav navbar-right">
                           <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
