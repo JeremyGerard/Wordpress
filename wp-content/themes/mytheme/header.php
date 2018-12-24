@@ -25,26 +25,29 @@
     <?php wp_head();?>
   </head>
   <body>
-      <div>
-          <nav class="navbar  navbar-fixed-top navbar-default">
-              <div class="container">
-                  <div class="blog-logo">
-                      <a class="navbar-brand" href="#index" title="BeeHive">
-                          <!--img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/-->
-                      </a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-                      <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
-                          <li><a href="#entreprise" title=""> Entreprise </a></li>
-                          <li><a href="#candidat" title=""> Candidat </a></li>
-                          <li><a href="#offres" title=""> Offres d'emploi </a></li>
-                          <li><a href="#contact" title=""> Contact </a></li>
-                      </ul>
-                  </div>
+
+  <div class="blog-header">
+      <nav class="navbar  navbar-fixed-top navbar-default">
+          <div class="container">
+              <div class="blog-logo">
+                  <a class="navbar-brand" href="#index" title="BeeHive">
+                      <!--img src="<?php echo get_bloginfo('template_url') ?>/images/beehive-search.png" alt=""/-->
+                  </a>
               </div>
-          </nav>
-      </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#index" title="" class="active"> Qui sommes-nous </a></li>
+                      <li><a href="#entreprise" title=""> Entreprise </a></li>
+                      <li><a href="#candidat" title=""> Candidat </a></li>
+                      <li><a href="#offres" title=""> Offres d'emploi </a></li>
+                      <li><a href="#contact" title=""> Contact </a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+      <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
+  </div>
 
 
       <!--div class="blog-masthead">
@@ -59,9 +62,3 @@
           </div>
       </div-->
 
-      <div class="container">
-
-          <div class="blog-header">
-            <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-            <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
-          </div>
