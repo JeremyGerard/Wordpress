@@ -25,6 +25,7 @@
     <?php wp_head();?>
   </head>
   <body>
+    <div class="container">
       <nav class="navbar  navbar-fixed-top navbar-default">
           <div class="container">
               <div class="blog-logo">
@@ -43,9 +44,8 @@
               </div>
           </div>
       </nav>
-      <div class="container">
-          <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-          <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
+      <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+      <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 
 
     <!--div class="blog-masthead">
