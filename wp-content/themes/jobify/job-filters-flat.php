@@ -32,6 +32,7 @@ global $is_flat;
 	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
 	<div class="search_jobs">
+        <!-- Ne pas changer ici-->
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
 		<div class="search_keywords">
