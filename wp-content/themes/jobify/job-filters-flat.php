@@ -28,42 +28,42 @@ global $is_flat;
 
 <?php do_action( 'job_manager_job_filters_before', $atts ); ?>
 
-<form class="job_filters">
-    <?php do_action( 'job_manager_job_filters_start', $atts ); ?>
+<form class="job_search_form<?php if ( $is_flat ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
+	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
-    <div class="search_jobs">
-        <!--
+	<div class="search_jobs">
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
-		<div class="search_keywords">
-			<label for="search_keywords"><?php esc_html_e( 'Keywords', 'wp-job-manager' ); ?></label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'wp-job-manager' ); ?>" value="<?php echo esc_attr( $keywords ); ?>" />
+		<!--<div class="search_keywords">
+			<label for="search_keywords"><?php _e( 'Keywords', 'jobify' ); ?></label>
+			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'jobify' ); ?>" />
 		</div>
 
 		<div class="search_location">
-			<label for="search_location"><?php esc_html_e( 'Location', 'wp-job-manager' ); ?></label>
-			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'wp-job-manager' ); ?>" value="<?php echo esc_attr( $location ); ?>" />
+			<label for="search_location"><?php _e( 'Location', 'jobify' ); ?></label>
+			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'jobify' ); ?>" />
 		</div>-->
 
-        <?php if ( $categories ) : ?>
-            <?php foreach ( $categories as $category ) : ?>
-                <input type="hidden" name="search_categories[]" value="<?php echo esc_attr( sanitize_title( $category ) ); ?>" />
-            <?php endforeach; ?>
-        <?php elseif ( $show_categories && ! is_tax( 'job_listing_category' ) && get_terms( array( 'taxonomy' => 'job_listing_category' ) ) ) : ?>
-            <div class="search_categories">
-                <label for="search_categories"><?php esc_html_e( 'Category', 'wp-job-manager' ); ?></label>
-                <?php if ( $show_category_multiselect ) : ?>
-                    <?php job_manager_dropdown_categories( array( 'taxonomy' => 'job_listing_category', 'hierarchical' => 1, 'name' => 'search_categories', 'orderby' => 'name', 'selected' => $selected_category, 'hide_empty' => true ) ); ?>
-                <?php else : ?>
-                    <?php job_manager_dropdown_categories( array( 'taxonomy' => 'job_listing_category', 'hierarchical' => 1, 'show_option_all' => __( 'Any category', 'wp-job-manager' ), 'name' => 'search_categories', 'orderby' => 'name', 'selected' => $selected_category, 'multiple' => false, 'hide_empty' => true ) ); ?>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
+		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
 
-        <?php do_action( 'job_manager_job_filters_search_jobs_end', $atts ); ?>
-    </div>
+		<div class="search_categories">
+			<label for="search_categories"><?php _e( 'Category', 'jobify' ); ?></label>
+			<?php job_manager_dropdown_categories( array(
+				'taxonomy' => 'job_listing_category',
+				'hierarchical' => 1,
+				'show_option_all' => __( 'Any category', 'jobify' ),
+				'name' => 'search_categories',
+				'orderby' => 'name',
+				'multiple' => false,
+			) ); ?>
+		</div>
 
-    <?php do_action( 'job_manager_job_filters_end', $atts ); ?>
+		<?php endif; ?>
+
+		<?php do_action( 'job_manager_job_filters_search_jobs_end', $atts ); ?>
+	</div>
+
+	<?php do_action( 'job_manager_job_filters_end', $atts ); ?>
 </form>
 
 <?php do_action( 'job_manager_job_filters_after', $atts ); ?>
