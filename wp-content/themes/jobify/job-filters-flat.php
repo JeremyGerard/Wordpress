@@ -28,7 +28,7 @@ global $is_flat;
 
 <?php do_action( 'job_manager_job_filters_before', $atts ); ?>
 
-<form class="job_search_form<?php if ( $is_flat ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
+<form class="job_search_form<?php if ( true ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
 	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
 	<div class="search_jobs">
