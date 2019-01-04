@@ -1932,7 +1932,8 @@ button.button--type-action, button.view-video, .application_button,
   .site-header .jobify_widget_map_resumes div.resumes, .jobify_widget_map_resumes .site-header div.resumes, .site-header .widget_featured_jobs, .site-header .widget_featured_resumes, .site-header .site-main > .rcp-restrict-message {
     position: relative;
     padding: 1.5em;
-    width: 100%; }
+    width: 100%;
+    height:10px;}
     @media screen and (min-width: 768px) {
       .nav-menu-break-small .site-header .container, .nav-menu-break-small .site-header .page-template-jobify .widget_text, .page-template-jobify .nav-menu-break-small .site-header .widget_text,
       .nav-menu-break-small .site-header .page-template-template-widgetized .widget_text, .page-template-template-widgetized .nav-menu-break-small .site-header .widget_text, .nav-menu-break-small .site-header .jobify_widget_map div.job_listings, .jobify_widget_map .nav-menu-break-small .site-header div.job_listings,
