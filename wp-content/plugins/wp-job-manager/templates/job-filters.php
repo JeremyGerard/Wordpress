@@ -27,7 +27,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
 		<div class="search_keywords">
-			<label for="search_keywords"><?php esc_html_e( 'Keywords', 'wp-job-manager' ); ?></label>
+			<label for="search_keywords"><?php esc_html_e( 'Keywordsss', 'wp-job-manager' ); ?></label>
 			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'wp-job-manager' ); ?>" value="<?php echo esc_attr( $keywords ); ?>" />
 		</div>
 
