@@ -36,12 +36,12 @@ global $is_flat;
 
 		<div class="search_keywords">
 			<label for="search_keywords"><?php _e( 'Keywords', 'jobify' ); ?></label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywordsqqqqq', 'jobify' ); ?>" />
+			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Mots clefs', 'jobify' ); ?>" />
 		</div>
 
 		<div class="search_location">
 			<label for="search_location"><?php _e( 'Location', 'jobify' ); ?></label>
-			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'jobify' ); ?>" />
+			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Localisation', 'jobify' ); ?>" />
 		</div>
 
 		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
@@ -51,7 +51,7 @@ global $is_flat;
 			<?php job_manager_dropdown_categories( array(
 				'taxonomy' => 'job_listing_category',
 				'hierarchical' => 1,
-				'show_option_all' => __( 'Any category', 'jobify' ),
+				'show_option_all' => __( "Secteur d'activité", 'jobify' ),
 				'name' => 'search_categories',
 				'orderby' => 'name',
 				'multiple' => false,
