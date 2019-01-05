@@ -36,7 +36,7 @@ global $is_flat;
 
 		<div class="search_keywords">
 			<label for="search_keywords"><?php _e( 'Keywords', 'jobify' ); ?></label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywordsqqq', 'jobify' ); ?>" />
+			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywordsqqqqq', 'jobify' ); ?>" />
 		</div>
 
 		<div class="search_location">
