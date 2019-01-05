@@ -34,15 +34,15 @@ global $is_flat;
 	<div class="search_jobs">
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
-		<!--<div class="search_keywords">
-			<label for="search_keywords"><?php _e( 'Keywords', 'jobify' ); ?></label>
+		<div class="search_keywords">
+			<label for="search_keywords"><?php _e( 'Keywordsxx', 'jobify' ); ?></label>
 			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'jobify' ); ?>" />
 		</div>
 
 		<div class="search_location">
 			<label for="search_location"><?php _e( 'Location', 'jobify' ); ?></label>
 			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'jobify' ); ?>" />
-		</div>-->
+		</div>
 
 		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
 
