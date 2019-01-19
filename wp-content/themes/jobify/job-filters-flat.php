@@ -30,7 +30,7 @@ global $is_flat;
 
 <form class="job_search_form<?php if ( $is_flat ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
 
-    <?php if (is_home() == true) : ?>
+    <?php if (get_the_ID()==76) : ?>
         <?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
         <div class="search_jobs">
@@ -49,7 +49,7 @@ global $is_flat;
 
 		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
 
-            <div class="search_categories">
+            <div class="search_categories" <?php if (get_the_ID()!=76) : ?>style="width: 26%;margin-left: 25%"<?php endif; ?>>
                 <label for="search_categories"><?php _e( 'Category', 'jobify' ); ?></label>
                 <?php job_manager_dropdown_categories( array(
                     'taxonomy' => 'job_listing_category',
