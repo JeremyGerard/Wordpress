@@ -29,20 +29,23 @@ global $is_flat;
 <?php do_action( 'job_manager_job_filters_before', $atts ); ?>
 
 <form class="job_search_form<?php if ( $is_flat ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
-	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
-	<div class="search_jobs">
-		<!-- <?php #do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
+    <?php if (!is_home()) : ?>
+        <?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
-		<div class="search_keywords">
-			<label for="search_keywords"><?php #_e( 'Keywords', 'jobify' ); ?></label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Mots clefs', 'jobify' ); ?>" />
-		</div>
+        <div class="search_jobs">
+            <?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
-		<div class="search_location">
-			<label for="search_location"><?php #_e( 'Location', 'jobify' ); ?></label>
-			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Localisation', 'jobify' ); ?>" />
-		</div> -->
+            <div class="search_keywords">
+                <label for="search_keywords"><?php _e( 'Keywords', 'jobify' ); ?></label>
+                <input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Mots clefs', 'jobify' ); ?>" />
+            </div>
+
+            <div class="search_location">
+                <label for="search_location"><?php _e( 'Location', 'jobify' ); ?></label>
+                <input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Localisation', 'jobify' ); ?>" />
+            </div> -->
+    <?php endif; ?>
 
 		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
 
