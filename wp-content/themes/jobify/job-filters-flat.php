@@ -21,6 +21,7 @@ $atts = apply_filters( 'job_manager_ouput_jobs_default', array(
 	'selected_job_types' => false,
 	'show_category_multiselect' => false,
 	'selected_region' => false,
+    'text' => 'Rechercher',
 ) );
 
 global $is_flat;
