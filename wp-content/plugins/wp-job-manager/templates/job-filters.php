@@ -26,7 +26,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 	<div class="search_jobs">
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
-		<!--<div class="search_keywords">
+		<div class="search_keywords">
 			<label for="search_keywords"><?php esc_html_e( 'Keywordsss', 'wp-job-manager' ); ?></label>
 			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'wp-job-manager' ); ?>" value="<?php echo esc_attr( $keywords ); ?>" />
 		</div>
@@ -34,7 +34,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 		<div class="search_location">
 			<label for="search_location"><?php esc_html_e( 'Location', 'wp-job-manager' ); ?></label>
 			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'wp-job-manager' ); ?>" value="<?php echo esc_attr( $location ); ?>" />
-		</div>-->
+		</div>
 
 		<?php if ( $categories ) : ?>
 			<?php foreach ( $categories as $category ) : ?>
