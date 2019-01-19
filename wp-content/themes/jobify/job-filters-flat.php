@@ -30,7 +30,7 @@ global $is_flat;
 
 <form class="job_search_form<?php if ( $is_flat ) : ?> job_search_form--flat<?php endif; ?>" action="<?php echo jobify_get_listing_page_permalink() ? jobify_get_listing_page_permalink() : get_post_type_archive_link( 'job_listing' ); ?>" method="GET">
 
-    <?php if (!is_home()) : ?>
+    <?php if (is_home() == false) : ?>
         <?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
         <div class="search_jobs">
@@ -44,27 +44,27 @@ global $is_flat;
             <div class="search_location">
                 <label for="search_location"><?php _e( 'Location', 'jobify' ); ?></label>
                 <input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Localisation', 'jobify' ); ?>" />
-            </div> -->
+            </div>
     <?php endif; ?>
 
 		<?php if ( get_option( 'job_manager_enable_categories' ) ) : ?>
 
-		<div class="search_categories">
-			<label for="search_categories"><?php _e( 'Category', 'jobify' ); ?></label>
-			<?php job_manager_dropdown_categories( array(
-				'taxonomy' => 'job_listing_category',
-				'hierarchical' => 1,
-				'show_option_all' => __( "Secteur d'activité", 'jobify' ),
-				'name' => 'search_categories',
-				'orderby' => 'name',
-				'multiple' => false,
-			) ); ?>
-		</div>
+            <div class="search_categories">
+                <label for="search_categories"><?php _e( 'Category', 'jobify' ); ?></label>
+                <?php job_manager_dropdown_categories( array(
+                    'taxonomy' => 'job_listing_category',
+                    'hierarchical' => 1,
+                    'show_option_all' => __( "Secteur d'activité", 'jobify' ),
+                    'name' => 'search_categories',
+                    'orderby' => 'name',
+                    'multiple' => false,
+                ) ); ?>
+            </div>
 
 		<?php endif; ?>
 
 		<?php do_action( 'job_manager_job_filters_search_jobs_end', $atts ); ?>
-	</div>
+	    </div>
 
 	<?php do_action( 'job_manager_job_filters_end', $atts ); ?>
 </form>
