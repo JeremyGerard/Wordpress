@@ -2693,7 +2693,7 @@ ul.nav-menu--primary a:before {
 
 @media screen and (min-width: 1200px) {
   .callout-feature-content--height-large {
-    padding-top: 13em;
+    padding-top: 10em;
     padding-bottom: 13em; } }
 
 .feature-callout.text-left .callout-feature-content {
