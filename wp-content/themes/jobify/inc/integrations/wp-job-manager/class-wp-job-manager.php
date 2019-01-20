@@ -280,7 +280,7 @@ class Jobify_WP_Job_Manager extends Jobify_Integration {
 	public function job_filters_after() {
 	?>
 		<div class="search_submit">
-			<input type="submit" name="submit" value="<?php echo esc_attr_e( 'Search', 'jobify' ); ?>" />
+			<input type="submit" name="submit" value="<?php echo esc_attr_e( 'Rechercher', 'jobify' ); ?>" />
 		</div>
 	<?php
 	}
