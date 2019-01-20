@@ -49,7 +49,7 @@ if ( ! $related->have_posts() ) {
 
 <div class="related-jobs container">
 
-	<h3 class="widget-title widget--title-job_listing-top"><?php _e( 'Related Jobs', 'jobify' ); ?></h2>
+	<h3 class="widget-title widget--title-job_listing-top"><?php _e( 'Annonces similaires', 'jobify' ); ?></h2>
 
 	<ul class="job_listings related">
 
