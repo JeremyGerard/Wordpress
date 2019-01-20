@@ -19,7 +19,7 @@
 
 		<?php else : // Open modal for other type. ?>
 
-			<input type="button" class="application_button button" value="<?php esc_attr_e( 'Apply for job', 'jobify' ); ?>" />
+			<input type="button" class="application_button button" value="<?php esc_attr_e( 'Postuler', 'jobify' ); ?>" />
 
 			<div class="application_details">
 				<?php
