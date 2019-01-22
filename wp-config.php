@@ -68,6 +68,9 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+/* Define language*/
+define('WPLANG', 'fr-FR');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -76,3 +79,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+
