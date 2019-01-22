@@ -52,7 +52,7 @@ global $is_flat;
 			<?php job_manager_dropdown_categories( array(
 				'taxonomy' => 'job_listing_category',
 				'hierarchical' => 1,
-				'show_option_all' => __( "Secteur d'activité", 'jobify' ),
+				'show_option_all' => __( "Choisissez votre secteur d'activité", 'jobify' ),
 				'name' => 'search_categories',
 				'orderby' => 'name',
 				'multiple' => false,
