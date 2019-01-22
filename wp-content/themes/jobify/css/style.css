@@ -4507,7 +4507,7 @@ ul.resumes .listing-bookmarked h3:before {
   .wp-job-manager-categories-enabled .search_jobs div.search_region,
   .wp-job-manager-categories-enabled .search_resumes div.search_region,
   .wp-resume-manager-categories-enabled .search_resumes div.search_region, .jobify-search-jobs-category div.search_categories, .wp-job-manager-categories-enabled .search_jobs div.search_categories, .wp-job-manager-categories-enabled .search_resumes div.search_categories, .wp-resume-manager-categories-enabled .search_resumes div.search_categories {
-    width: 26%;
+    width: 56%;
     margin-bottom: 0; }
   .jobify-search-jobs-category div.search_categories, .wp-job-manager-categories-enabled .search_jobs div.search_categories, .wp-job-manager-categories-enabled .search_resumes div.search_categories, .wp-resume-manager-categories-enabled .search_resumes div.search_categories {
     margin-right: 2%; }
