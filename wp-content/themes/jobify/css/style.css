@@ -2433,7 +2433,7 @@ ul.nav-menu--primary a:before {
       margin: 3.5em auto; } }
   @media screen and (min-width: 1200px) {
     .widget--home {
-      margin: 5em auto; } }
+      margin: 2.5em auto; } }
 
 .widget--home--no-margin {
   margin: 0; }
@@ -5075,7 +5075,8 @@ noscript ~ ul.job_listings, noscript ~ ul.resumes {
 @media screen and (min-width: 1200px) {
   .job_search_form--flat, .resume_search_form--flat {
     max-width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    margin-left: 34%; } }
 
 .resume_search_form--flat .search_resumes {
   background: none;
