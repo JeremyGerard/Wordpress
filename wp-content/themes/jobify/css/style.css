@@ -5075,8 +5075,7 @@ noscript ~ ul.job_listings, noscript ~ ul.resumes {
 @media screen and (min-width: 1200px) {
   .job_search_form--flat, .resume_search_form--flat {
     max-width: 80%;
-    margin: 0 auto;
-    margin-left: 34%; } }
+    margin: 0 auto;} }
 
 .resume_search_form--flat .search_resumes {
   background: none;
