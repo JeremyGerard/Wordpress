@@ -93,8 +93,7 @@ msgstr ""
 
 #: content-none.php:24
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+"Il n&rsquo;y a pas encore d&rsquo;annonce pour ce secteur "
 msgstr ""
 
 #: content-resume.php:30 content-single-resume.php:34
