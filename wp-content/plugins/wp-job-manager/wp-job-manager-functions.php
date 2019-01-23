@@ -1056,8 +1056,8 @@ function job_manager_dropdown_categories( $args = '' ) {
 		'value'           => 'id',
 		'multiple'        => true,
 		'show_option_all' => false,
-		'placeholder'     => __( 'Choose a category&hellip;', 'wp-job-manager' ),
-		'no_results_text' => __( 'No results match', 'wp-job-manager' ),
+		'placeholder'     => __( "Choisissez votre secteur d'activité", 'wp-job-manager' ),
+		'no_results_text' => __( "Pas d'annonce pour ce secteur d'activité", 'wp-job-manager' ),
 		'multiple_text'   => __( 'Select Some Options', 'wp-job-manager' ),
 	);
 
