@@ -41,7 +41,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 				<input type="hidden" name="search_categories[]" value="<?php echo esc_attr( sanitize_title( $category ) ); ?>" />
 			<?php endforeach; ?>
 		<?php elseif ( $show_categories && ! is_tax( 'job_listing_category' ) && get_terms( array( 'taxonomy' => 'job_listing_category' ) ) ) : ?>
-			<div class="search_categories">
+			<div class="search_categories-filter">
 				<label for="search_categories"><?php esc_html_e( 'Category', 'wp-job-manager' ); ?></label>
 				<?php if ( $show_category_multiselect ) : ?>
 					<?php job_manager_dropdown_categories( array( 'taxonomy' => 'job_listing_category', 'hierarchical' => 1, 'show_option_all' => __( "Secteur d'activité", 'jobify' ), 'name' => 'search_categories', 'orderby' => 'name', 'selected' => $selected_category, 'hide_empty' => true ) ); ?>
