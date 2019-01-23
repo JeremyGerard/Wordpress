@@ -71,6 +71,7 @@ define('WP_DEBUG', false);
 /* Define language*/
 define('WPLANG', 'fr-FR');
 
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
