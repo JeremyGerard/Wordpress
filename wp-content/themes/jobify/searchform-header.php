@@ -9,6 +9,6 @@
 ?>
 <form role="search" method="get" id="searchform" class="searchform searchform--header" action="<?php echo home_url( '/' ); ?>">
 	<label class="screen-reader-text" for="s"><?php _e( 'Search for', 'jobify' ); ?>:</label>
-	<input type="text" value="" name="s" id="s" class="searchform__input searchform--header__input" placeholder="<?php _e( 'Keywords...', 'jobify' ); ?>" />
+	<input type="text" value="" name="s" id="s" class="searchform__input searchform--header__input" placeholder="<?php _e( 'Recherche...', 'jobify' ); ?>" />
 	<button type="submit" id="searchsubmit" class="searchform__submit searchform--header__submit"><span class="screen-reader-text"><?php _e( 'Search', 'jobify' ); ?></button>
 </form>
