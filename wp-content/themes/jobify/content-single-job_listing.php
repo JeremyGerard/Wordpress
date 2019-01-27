@@ -35,7 +35,7 @@ $col_company  = 'top' == $info ? '12' : '4';
 
 			<div class="job-overview-content row">
 				<div class="job_listing-description job-overview col-md-<?php echo $col_overview; ?> col-sm-12">
-					<h2 class="widget-title widget-title--job_listing-top job-overview-title"><?php _e( 'Overview', 'jobify' ); ?></h2>
+					<h2 class="widget-title widget-title--job_listing-top job-overview-title"><?php _e( 'Description', 'jobify' ); ?></h2>
 					<?php echo apply_filters( 'the_job_description', get_the_content() ); ?>
 
 					<?php if ( candidates_can_apply() && apply_filters( 'jobify_single_job_listing_apply_button', true ) ) : ?>
