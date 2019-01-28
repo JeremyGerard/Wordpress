@@ -2111,7 +2111,7 @@ msgstr "Mis à jour il y a %s"
 
 #: content-none.php:24
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Il semblerait que nous ne pouvons pas trouvez ce que vous chercher. Peut-être la recherche pourrait vous aidez."
+msgstr "Aucune offre d'emploi pour le moment dans ce secteur d'activité"
 
 #: content-none.php:19
 msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
