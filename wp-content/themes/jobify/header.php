@@ -10,6 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="google-site-verification" content="sADXAO0vWmK8XLL-OnsaSiVeG1uhkU7JyEL1_MlN7Aw" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
